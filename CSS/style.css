@@ -1,0 +1,179 @@
+/*
+---------------------------------------------
+Table of contents
+------------------3------------------------------
+1. Typography
+2. Sections
+3. Containers
+4. Header
+5. Nav
+6. Main
+7. Footer
+8. Media Queries:
+- Small devices (landscape phones, 576px and up)
+- Medium devices (tablets, 768px and up)
+- Large devices (desktops, 992px and up)
+- Extra large devices (large desktops, 1200px and up)
+
+--------------------------------------------- */
+
+/* Typography */
+body, ul, li, p, label, input, div {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  text-decoration: none;
+  color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1 {
+  font-family: 'Arial Rounded MT', sans-serif;
+  font-size: 48px !important;
+  font-weight: 200 !important;
+  color: #D9A74A;
+
+}
+h2 {
+  font-family: 'Arial Rounded MT', sans-serif;
+  font-size: 30px !important;
+  font-weight: 300;
+  text-decoration-line: underline;
+  text-decoration-color: #D9A74A;
+  color: #fff;
+  
+}
+h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 22px !important;
+  color: #D9A74A;
+}
+
+ul li {
+  display: inline;
+}
+
+/* Sections */
+body {
+  background-color: #15334F;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header{
+  background-color: #fff;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+footer{
+  background-color: #A7A7A7;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+
+.socialmedia{
+  align-items: baseline;
+}
+
+/* Header */
+.header_container {
+  width: 100%;
+  margin: auto;
+}
+
+/* Nav */
+.navbar {
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  flex: 1;
+  background-color: #15334F;
+  padding: 0px;
+}
+
+.nav_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_left_container {
+  justify-content: flex-start;
+  margin-left: 25px;
+  list-style-type: none;
+}
+
+.nav_right_container {
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.container{
+  width: 100%;
+  margin: auto;
+}
+
+/* Main */
+main{
+      text-align: center;
+      width: 100%;
+      background-image: url(../img/banner_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+}
+
+.row {
+display: flex;
+}
+
+.column {
+flex: 50%;
+padding: 10px;
+margin: 50px;
+opacity: 0.8;
+height: 300px;
+border-style: solid;
+border-color: #D9A74A;
+border-radius: 25px;
+}
+
+
+  /* Small devices (landscape phones, 576px and up)*/
+.product-wap .h3, .product-wap li, .product-wap i, .product-wap p {
+  font-size: 12px !important;
+}
+.product-wap .product-color-dot {
+  width: 6px;
+  height: 6px;
+}
+
+@media (min-width: 576px) {
+  .rainy-carousel .h1 { font-size: 1em !important;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  #rainy_main_nav .navbar-nav {max-width: 450px;}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #rainy_main_nav .navbar-nav {max-width: 550px;}
+  #template-mo-zay-hero-carousel .carousel-item {min-height: 30rem !important;}
+  .product-wap .h3, .product-wap li, .product-wap i, .product-wap p {font-size: 18px !important;}
+  .product-wap .product-color-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {}
